@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Signika:wght@400;700&display=swap");
+body {
+  background: #fbfbfb;
+  font-family: "Signika", Helvetica, sans-serif;
+}
+
+.main {
+  background: url("../images/header_bg.webp") no-repeat top left;
+  padding: 46px 0 0 104px;
+}
+.main nav {
+  display: flex;
+  padding-bottom: 12px;
+}
+.main nav a {
+  color: white;
+  font-size: 20px;
+  padding: 45px 60px 45px 45px;
+  min-width: 180px;
+}
+.main nav a:hover {
+  color: #F44336;
+  background: url("../images/hover_bg.webp") no-repeat;
+  transition: 0.5s;
+}
+.main .title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 260px 0 300px;
+}
+.main .title .name {
+  font-size: 52px;
+  font-weight: 700;
+  color: #000C24;
+  -webkit-text-stroke: 1px white;
+}
+.main .title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+}
+.main .title .social {
+  display: flex;
+  gap: 12px;
+}
+.main .title .social img:hover {
+  filter: invert(1);
+  transition: 1s;
+}
+.main .scroll {
+  color: #928A97;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.main .scroll__about {
+  padding-top: 20px;
+}
+.main #about {
+  background: url("../images/BG.png") no-repeat left top;
+  padding: 35px 0 0 50px;
+  display: flex;
+  gap: 50px;
+}
+.main #about .pic {
+  display: flex;
+}
+.main #about .about__text {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  color: #000C24;
+}
+.main #about .about__text h2 {
+  font-family: "Roboto", sans-serif;
+  color: #F44336;
+  font-size: 32px;
+  justify-content: start;
+}
+.main #about .about__text p {
+  font-size: 24px;
+}
+.main #about .about__text a {
+  border-radius: 4px;
+  color: white;
+  background-color: #000C24;
+  padding: 8px 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+#skills {
+  padding: 35px 50px 50px;
+  display: flex;
+  gap: 50px;
+  background: #000C24 url("../images/skills_bg.webp") no-repeat center right;
+  background-size: contain;
+}
+#skills .skills__text {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  color: #000C24;
+}
+#skills .skills__text h2 {
+  font-family: "Roboto", sans-serif;
+  color: #F44336;
+  font-size: 32px;
+  justify-content: start;
+}
+#skills .skills__text p {
+  font-size: 24px;
+  color: white;
+}
+#skills .skills__text .skill__items {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#skills .skills__text .skill__items__circle {
+  /* Set the sizes of the elements that make up the progress bar */
+}
+#skills .skills__text .skill__items__circle__name {
+  text-align: center;
+  margin: 8px 0 12px;
+}
+#skills .skills__text .skill__items__circle div[role=progressbar] {
+  --size: 100px;
+  --pgPercentage: var(--value);
+  -webkit-animation: growProgressBar 3s 1 forwards;
+          animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(closest-side, #0a2e40 80%, transparent 0 99.9%, #000C24 0), conic-gradient(white calc(var(--pgPercentage) * 1%), #0a2e40 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: white;
+}
+#skills .skills__text .skill__items__circle div[role=progressbar]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
+#skills .skill__pic {
+  background: url("../images/BG.png") no-repeat top right;
+  padding: 30px 50px 0;
+}
+
+#works {
+  margin-left: -104px;
+  padding: 35px 0 0 100px;
+  display: flex;
+  background: url("../images/work_bg.png") no-repeat left center;
+  /*
+  PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+  http://stackoverflow.com/a/34696029/383904
+  */
+  /* YOU'RE THE DESIGNER! 
+     ____________________
+     All above was mainly to get it working :)
+     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+}
+#works .CSSgal {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  /* Or set a fixed height */
+  /* SLIDER */
+  /* PREV/NEXT, CONTAINERS & ANCHORS */
+  /* NAVIGATION */
+  /* NAVIGATION BUTTONS */
+  /* ALL: */
+  /* ACTIVE */
+  /* More slides? Add here more rules */
+  /* PREV/NEXT CONTAINERS VISIBILITY */
+  /* ALL: */
+  /* ACTIVE: */
+  /* More slides? Add here more rules */
+  /* SLIDER ANIMATION POSITIONS */
+  /* More slides? Add here more rules */
+}
+#works .CSSgal .slider {
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
+  position: relative;
+  min-height: 400px;
+}
+#works .CSSgal .slider > * {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#works .CSSgal .slider .prevNext {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+}
+#works .CSSgal .slider .prevNext div a {
+  background: #fff;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  /* If you want to place numbers */
+  text-align: center;
+  opacity: 0.7;
+  transition: 0.3s;
+  transform: translateY(-50%);
+  left: 0;
+}
+#works .CSSgal .slider .prevNext div:hover {
+  opacity: 1;
+}
+#works .CSSgal .slider .prevNext div a + a {
+  left: auto;
+  right: 0;
+}
+#works .CSSgal .slider .prevNext > div + div {
+  visibility: hidden;
+  /* Hide all but first P/N container */
+}
+#works .CSSgal .bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+#works .CSSgal .bullets > a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+#works .CSSgal .bullets > a + a {
+  background: rgba(255, 255, 255, 0.5);
+  /* Dim all but first */
+}
+#works .CSSgal .bullets > a:hover {
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+#works .CSSgal > s:target ~ .bullets > * {
+  background: rgba(255, 255, 255, 0.5);
+}
+#works .CSSgal #s1:target ~ .bullets > *:nth-child(1) {
+  background: rgb(255, 255, 255);
+}
+#works .CSSgal #s2:target ~ .bullets > *:nth-child(2) {
+  background: rgb(255, 255, 255);
+}
+#works .CSSgal #s3:target ~ .bullets > *:nth-child(3) {
+  background: rgb(255, 255, 255);
+}
+#works .CSSgal #s4:target ~ .bullets > *:nth-child(4) {
+  background: rgb(255, 255, 255);
+}
+#works .CSSgal > s:target ~ .prevNext > * {
+  visibility: hidden;
+}
+#works .CSSgal #s1:target ~ .prevNext > *:nth-child(1) {
+  visibility: visible;
+}
+#works .CSSgal #s2:target ~ .prevNext > *:nth-child(2) {
+  visibility: visible;
+}
+#works .CSSgal #s3:target ~ .prevNext > *:nth-child(3) {
+  visibility: visible;
+}
+#works .CSSgal #s4:target ~ .prevNext > *:nth-child(4) {
+  visibility: visible;
+}
+#works .CSSgal #s1:target ~ .slider {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+}
+#works .CSSgal #s2:target ~ .slider {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+#works .CSSgal #s3:target ~ .slider {
+  transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+}
+#works .CSSgal #s4:target ~ .slider {
+  transform: translateX(-300%);
+  -webkit-transform: translateX(-300%);
+}
+#works .CSSgal .slider h2 {
+  font-family: "Roboto", sans-serif;
+  color: #F44336;
+  font-size: 32px;
+  justify-content: start;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+@import "vars";
+
+@mixin text_box {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    color: $primary-color;
+}
+
+@mixin h2 {
+    font-family: $roboto;
+    color: $h-text;
+    font-size: 32px;
+    justify-content: start;
+}
+
+@mixin button {
+    border-radius: 4px;
+    color: white;
+    background-color: $primary-color;
+    padding: 8px 16px;
+    font-family: $roboto;
+    font-size: 16px;
+}
