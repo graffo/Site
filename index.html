@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt_br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,28 +14,32 @@
 
 </head>
 
-<body>
+<body id="home">
     <section class="main">
         <nav>
-            <a>Home</a>
-            <a>Sobre</a>
-            <a>Skill</a>
-            <a>Trabalhos</a>
-            <a>Contatos</a>
+            <a href="#home" title="Ir para o Ínicio">Home</a>
+            <a href="#about" title="Sobre o desenvolvedor front-end">Sobre</a>
+            <a href="#skill" title="Minhas habilidades">Skill</a>
+            <a href="#works" title="Conheça meus trabalhos">Trabalhos</a>
+            <a href="#contact" title="Que tal mandar um Oi?">Contatos</a>
         </nav>
 
         <div class="title">
             <div class="name">Diego Tabisz</div>
             <h1>Mid level front-end developer</h1>
             <div class="social">
-                <a href="" target="_blank" alt=""><img src="assets/images/social/ig.png" width="36" height="36"></a>
-                <a href="" target="_blank" alt=""><img src="assets/images/social/li.png" width="36" height="36"></a>
-                <a href="" target="_blank" alt=""><img src="assets/images/social/git.png" width="36" height="36"></a>
-                <a href="" target="_blank" alt=""><img src="assets/images/social/be.png" width="36" height="36"></a>
+                <a href="https://www.instagram.com/graffotabisz/" target="_blank" title="Meu instagram"><img
+                        src="assets/images/social/ig.png" width="36" height="36" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/diegotabisz/" target="_blank" title="Meu linkedin"><img
+                        src="assets/images/social/li.png" width="36" height="36" alt="linkedin"></a>
+                <a href="https://github.com/graffo" target="_blank" title="Meus códigos"><img
+                        src="assets/images/social/git.png" width="36" height="36" alt="github"></a>
+                <a href="https://www.behance.net/graffo" target="_blank" title="Meu portifólio no behance"><img
+                        src="assets/images/social/be.png" width="36" height="36" alt="behance"></a>
             </div>
         </div>
 
-        <a class="scroll">
+        <a class="scroll" href="#about" title="Rolar">
             <img src="assets/images/sroll.png" width="24" height="24" alt="Rolar">Rolar
         </a>
 
@@ -53,11 +57,12 @@
                     Sou formado em Design Gráfico pela Unicuritiba, iniciei meus trabalhos com Design Gráfico em 2003,
                     quando fui contratado pelo Cidade Clima, uma gráfica que tinha foco em produção de manuais técnicos.
                 </p>
-                <a href="">Baixar Currículo</a>
+                <a href="assets/files/Diego_Tabisz_de_Freitas.pdf" target="_blank"
+                    title="Currículo Diego Front-End Developer">Baixar Currículo</a>
             </div>
         </div>
 
-        <a class="scroll scroll__about">
+        <a href="#skills" class="scroll scroll__about" title="Rolar">
             <img src="assets/images/sroll.png" width="24" height="24" alt="Rolar">Rolar
         </a>
 
@@ -65,8 +70,13 @@
             <div class="skills__text">
                 <h2>Skills</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at justo pharetra, lacinia arcu et,
-                    dignissim ligula.
+                    Possup um sólido conhecimento linguagens de front-end como HTML5 e Css3, agregado à experiência de
+                    uso das funções do Wordpress e desenvolvimentos de temas, inclusive com foco em lojas virtuais com
+                    Woocommerce. Também conhecimento de Seo on Page e ferramentas de métricas do Google, com foco de
+                    performance baseada nas proposições do Google Lighhouse. <br><br>
+                    Nos últimos dois anos absorvi muito conhecimento de Gulp, Javascript e Sass, com umas pitadinhas de
+                    Asp.Net e MVC. Desde o meio de 2022 tenho estudos ReactJs, que trouxe um novo entendimento de
+                    componentização e manipulação de dom.
                 </p>
                 <div class="skill__items">
                     <div class="skill__items__circle">
@@ -86,6 +96,12 @@
                             style="--value:78">
                         </div>
                         <div class="skill__items__circle__name">Wordpress</div>
+                    </div>
+                    <div class="skill__items__circle">
+                        <div role="progressbar" aria-valuenow="75" aria-valuemin="75" aria-valuemax="100"
+                            style="--value:70">
+                        </div>
+                        <div class="skill__items__circle__name">Bootstrap</div>
                     </div>
                     <div class="skill__items__circle">
                         <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
@@ -125,7 +141,7 @@
 
         </div>
 
-        <a class="scroll scroll__about">
+        <a href="#works" class="scroll scroll__about" title="Rolar">
             <img src="assets/images/sroll.png" width="24" height="24" alt="Rolar">Rolar
         </a>
 
@@ -139,52 +155,183 @@
                 <s id="s4"></s>
 
                 <div class="slider">
-                    <div style="background:#5b8;">
-                        <div class="prevNext">
-                            <div><a href="#s4"></a><a href="#s2"></a></div>
-                          
+                    <div class="slider__item">
+                        <div class="slider__item__pic">
+                            <img src="assets/images/work/w_redtrabaja.webp" width="475" height="653" alt="Redtrabaje">
+                            <div class="prevNext">
+                                <div><a href="#s4"></a><a href="#s2"></a></div>
+                            </div>
                         </div>
-                        <h2>PURE <b>CSS</b> SLIDESHOW</h2>
-                        <p>Responsive Slideshow Gallery created using CSS only<br>by Roko</p>
-                    </div>
-                    <div style="background:#85b;">
-                        <div class="prevNext">
-                           
-                            <div><a href="#s1"></a><a href="#s3"></a></div>
-                          
+                        <div class="slider__item__content">
+                            <h3>Redtrabaje</h3>
+                            <p>Site de vagas com foco em home office e multi idioma. O sistema de multi idioma é todo
+                                baseado nas resources do próprio Asp.Net. Site responsivo com validações feitas em
+                                jQuery Validation nos formulários de perfil do candidato, além do ajax para edição
+                                dinâmica.
+                            </p>
+                            <div class="tech">
+                                <div class="tech__name">HTML5</div>
+                                <div class="tech__name">Css 3</div>
+                                <div class="tech__name">Sass</div>
+                                <div class="tech__name">Responsivo</div>
+                                <div class="tech__name">jQuery</div>
+                                <div class="tech__name">Ajax</div>
+                                <div class="tech__name">Asp.Net MVC</div>
+                                <div class="tech__name">Gulp</div>
+                            </div>
+                            <div class="link">
+                                <a href="https://www.redtrabaje.com/" target="_blank" title="Link para o site"><img
+                                        src="assets/images/work/site.png" alt="Link para o site"></a>
+
+                            </div>
+                            <div class="bullets">
+                                <a href="#s1" class="active">01</a>
+                                <a href="#s2">02</a>
+                                <a href="#s3">03</a>
+                                <a href="#s4">04</a>
+                            </div>
                         </div>
-                        <h2>Slide 2</h2>
                     </div>
-                    <div style="background:#e95;">
-                        <div class="prevNext">
-                           
-                            <div><a href="#s2"></a><a href="#s4"></a></div>
-                           
+                    <div class="slider__item">
+                        <div class="slider__item__pic">
+                            <img src="assets/images/work/w_aluraspace.webp" width="475" height="653">
+                            <div class="prevNext">
+                                <div><a href="#s1"></a><a href="#s3"></a></div>
+                            </div>
                         </div>
-                        <h2>Slide 3</h2>
-                    </div>
-                    <div style="background:#e59;">
-                        <div class="prevNext">
-                            
-                            <div><a href="#s3"></a><a href="#s1"></a></div>
+                        <div class="slider__item__content">
+                            <h3>Alura Space</h3>
+                            <p>Projeto do curso de React da Alura para uso de arquivos estáticos dentro de um site,
+                                trazendo componentização e uso de Sass para otimização do Css.
+                            </p>
+                            <div class="tech">
+                                <div class="tech__name">Sass</div>
+                                <div class="tech__name">ReactJs</div>
+                                <div class="tech__name">React</div>
+                            </div>
+                            <div class="link">
+                                <a href="" title="Link para o site"><img src="assets/images/work/site.png"
+                                        alt="Link para o site"></a>
+                                <a href="https://github.com/graffo/space" target="_blank"
+                                    title="Código do site no Github"><img src="assets/images/social/git.png"
+                                        alt="Código do site no Github"></a>
+                            </div>
+                            <div class="bullets">
+                                <a href="#s1">01</a>
+                                <a href="#s2" class="active">02</a>
+                                <a href="#s3">03</a>
+                                <a href="#s4">04</a>
+                            </div>
                         </div>
-                        <h2>Slide 4</h2>
                     </div>
-                    
+
+                    <div class="slider__item">
+                        <div class="slider__item__pic">
+                            <img src="assets/images/work/portifolio.webp" width="475" height="653">
+                            <div class="prevNext">
+                                <div><a href="#s2"></a><a href="#s4"></a></div>
+                            </div>
+                        </div>
+                        <div class="slider__item__content">
+                            <h3>Meu Portfólio</h3>
+                            <p>Feito a partir de um protótipo em figma, utilizando apenas Html e Css/Sass, focando na
+                                qualidade de código, um one page para exibir meus trabalhos mais importantes.
+                            </p>
+                            <div class="tech">
+                                <div class="tech__name">HTML5</div>
+                                <div class="tech__name">Css 3</div>
+                                <div class="tech__name">Sass</div>
+                                <div class="tech__name">Responsivo</div>
+                            </div>
+                            <div class="link">
+                                <a href="https://www.graffo.app/" target="_blank" title="Link para o site"><img
+                                        src="assets/images/work/site.png" alt="Link para o site"></a>
+                                <a href="https://github.com/graffo/Site" target="_blank"
+                                    title="Código do site no Github"><img src="assets/images/social/git.png"
+                                        alt="Código do site no Github"></a>
+                            </div>
+                            <div class="bullets">
+                                <a href="#s1">01</a>
+                                <a href="#s2">02</a>
+                                <a href="#s3" class="active">03</a>
+                                <a href="#s4">04</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="slider__item__pic">
+                            <img src="assets/images/work/w_space.webp" width="475" height="653">
+                            <div class="prevNext">
+                                <div><a href="#s3"></a><a href="#s1"></a></div>
+                            </div>
+                        </div>
+                        <div class="slider__item__content">
+                            <h3>Space</h3>
+                            <p>Teste realizado em HTML e Javascript, a partir da leitura de uma api, o carregamento de
+                                funcionários e exibição dos mesmo conforme o clique.</p>
+                            <div class="tech">
+                                <div class="tech__name">HTML</div>
+                                <div class="tech__name">Javascript</div>
+                                <div class="tech__name">Api</div>
+                            </div>
+                            <div class="link">
+                                <a href="https://space-box.vercel.app/" target="Link para o site"><img src="assets/images/work/site.png"
+                                        alt="Link para o site"></a>
+                                <a href="https://github.com/graffo/SpaceBox" target="_blank" title="Código do site no Github"><img
+                                        src="assets/images/social/git.png" alt="Código do site no Github"></a>
+                            </div>
+                            <div class="bullets">
+                                <a href="#s1">01</a>
+                                <a href="#s2">02</a>
+                                <a href="#s3">03</a>
+                                <a href="#s4" class="active">04</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
 
-               
-
-                <div class="bullets">
-                    <a href="#s1">1</a>
-                    <a href="#s2">2</a>
-                    <a href="#s3">3</a>
-                    <a href="#s4">4</a>
-                </div>
-
+        </div>
+        <a href="#contact" class="scroll scroll__about" title="Rolar">
+            <img src="assets/images/sroll.png" width="24" height="24" alt="Rolar">Rolar
+        </a>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <h2>Contato</h2>
+            <div class="hi">
+                Olá, tudo bem?<br />
+                Que tal mandar um Oi?
+            </div>
+            <div class="form">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "23492362",
+                        formId: "f4d9d385-f509-4b8d-925c-39296788b440"
+                    });
+                </script>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="links">
+            <a href="https://www.instagram.com/graffotabisz/" target="_blank" title="Meu instagram"><img
+                    src="assets/images/social/ig.png" width="36" height="36" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/diegotabisz/" target="_blank" title="Meu linkedin"><img
+                    src="assets/images/social/li.png" width="36" height="36" alt="linkedin"></a>
+            <a href="https://github.com/graffo" target="_blank" title="Meus códigos"><img
+                    src="assets/images/social/git.png" width="36" height="36" alt="github"></a>
+            <a href="https://www.behance.net/graffo" target="_blank" title="Meu portifólio no behance"><img
+                    src="assets/images/social/be.png" width="36" height="36" alt="behance"></a>
+        </div>
+        <div class="rights">@<span id="year"></span> - Todos os diretos reservados</div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
