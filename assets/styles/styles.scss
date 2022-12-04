@@ -1,6 +1,6 @@
 @import "_vars";
 @import "mixin";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100,400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
 
 body {
     background: $surface;
@@ -74,7 +74,7 @@ p {
         display: flex;
         align-items: center;
         gap: 8px;
-        margin-bottom: 32px;
+        margin-bottom: 60px;
 
         &__about {
             padding-top: 20px;
@@ -100,6 +100,8 @@ p {
 
             p {
                 font-size: 18px;
+                line-height: 30px;
+                font-weight: 100;
             }
 
             a {
@@ -125,7 +127,9 @@ p {
         }
 
         p {
-            font-size: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 100;
             color: white;
         }
 
@@ -139,9 +143,10 @@ p {
             &__circle {
                 &__name {
                     text-align: center;
-                    margin: 8px 0 12px;
+                    margin: 12px 0 20px;
                     color: white;
-                    font-size: 24px;
+                    font-size: 20px;
+                    font-weight: 100;
                 }
 
                 /* Set the sizes of the elements that make up the progress bar */
@@ -283,7 +288,9 @@ p {
                     }
 
                     p {
-                        font-size: 18px;
+                        font-size: 20px;
+                        line-height: 30px;
+                        font-weight: 100;
                         width: 60%;
                     }
 
@@ -432,24 +439,224 @@ p {
     }
 }
 
-footer{
+footer {
     background: $primary-color;
     padding: 50px 0;
-    .links{
+
+    .links {
         display: flex;
         width: 100%;
         justify-content: center;
         gap: 12px;
-        a:hover{
-            filter:invert(1);
+
+        a:hover {
+            filter: invert(1);
         }
     }
-    .rights{
+
+    .rights {
         width: 100%;
         font-size: 12px;
         color: white;
         display: flex;
         justify-content: center;
         margin: 16px auto;
+    }
+}
+
+@media screen and (max-width : 840px) {
+    .main {
+        padding-left: 40px;
+        background-size: contain;
+
+        .title {
+            padding-top: 200px;
+        }
+
+        nav {
+            padding-right: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                padding: 10px 0;
+                min-width: fit-content;
+            }
+        }
+
+        #about {
+            .pic {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        #skills {
+            margin-left: -40px;
+            flex-direction: column;
+            background-image: none;
+
+            .skills__text {
+                width: 100%;
+            }
+
+            .skill__pic {
+                display: none;
+            }
+
+            .skill__items {
+                justify-content: space-between;
+            }
+        }
+
+        #works {
+            .CSSgal {
+                .slider {
+                    &__item {
+                        flex-direction: column;
+                        align-items: center;
+                        
+                        &__pic {
+                            order: 1;
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &__content{
+                            gap: 16px;
+                            p{
+                                width: 78%;
+                            }
+                            .bullets{
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        
+        .content{
+            .hi, .form{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 440px) {
+    .main {
+        padding: 5%;
+        background-size: 180% ;
+
+        .title {
+            padding-top: 200px;
+        }
+
+        nav {
+        display: none;
+        }
+
+        #about {
+            flex-direction: column;
+            .pic {
+                width: 100%;
+            }
+            .about__text{
+                width: 100%;
+                a{
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px 12px;
+                }
+            }
+        }
+
+        #skills {
+            padding: 5%;
+            margin:0px;
+            width: 100%;
+            flex-direction: column;
+            background-image: none;
+            .skill__items{
+                gap: 20px;
+            }
+            .skills__text {
+                width: 100%;
+            }
+
+            .skill__pic {
+                display: none;
+            }
+
+            .skill__items {
+                justify-content: center;
+            }
+        }
+
+        #works {
+            background: none;
+            .CSSgal {
+                .slider {
+                    &__item {
+                        width: 100%;;
+                        flex-direction: column;
+                        align-items: center;
+                        background: none;
+                        padding: 0;
+                        &__pic {
+                            order: 1;
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        &__content{
+                            width: 100%;
+                            gap: 16px;
+                            h3{
+                                justify-content: center;
+                            }
+                            p{
+                                width: 100%;
+                            }
+                           .tech{
+                            flex-wrap: wrap;
+                           }
+                            .bullets{
+                                position: relative;
+                                a{
+                                    padding-right: 15%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        padding: 5%;
+        .content{
+            padding: 5%;
+            .hi, .form{
+                width: 100%;
+            }
+        }
+    }
+    footer{
+        padding: 5%;
+        .rights{
+            text-align: center;
+        }
     }
 }

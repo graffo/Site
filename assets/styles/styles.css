@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100,400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 body {
   background: #fbfbfb;
   font-family: "Roboto", Helvetica, sans-serif;
@@ -58,7 +58,7 @@ p {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
 }
 .main .scroll__about {
   padding-top: 20px;
@@ -82,7 +82,7 @@ p {
   color: #000C24;
 }
 .main #about .about__text h2 {
-  font-weight: 700;
+  font-weight: 900;
   color: #F44336;
   font-size: 32px;
   display: flex;
@@ -90,6 +90,8 @@ p {
 }
 .main #about .about__text p {
   font-size: 18px;
+  line-height: 30px;
+  font-weight: 100;
 }
 .main #about .about__text a {
   border-radius: 4px;
@@ -116,14 +118,16 @@ p {
   color: #000C24;
 }
 #skills .skills__text h2 {
-  font-weight: 700;
+  font-weight: 900;
   color: #F44336;
   font-size: 32px;
   display: flex;
   justify-content: start;
 }
 #skills .skills__text p {
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
   color: white;
 }
 #skills .skills__text .skill__items {
@@ -137,9 +141,10 @@ p {
 }
 #skills .skills__text .skill__items__circle__name {
   text-align: center;
-  margin: 8px 0 12px;
+  margin: 12px 0 20px;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 100;
 }
 #skills .skills__text .skill__items__circle div[role=progressbar] {
   --size: 100px;
@@ -256,7 +261,7 @@ p {
   /* NAVIGATION */
 }
 #works .CSSgal .slider__item__content h3 {
-  font-weight: 700;
+  font-weight: 900;
   color: #F44336;
   font-size: 32px;
   display: flex;
@@ -264,7 +269,9 @@ p {
   width: 100%;
 }
 #works .CSSgal .slider__item__content p {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
   width: 60%;
 }
 #works .CSSgal .slider__item__content .tech {
@@ -358,7 +365,7 @@ p {
 }
 #contact .content h2 {
   width: 100%;
-  font-weight: 700;
+  font-weight: 900;
   color: #F44336;
   font-size: 32px;
   display: flex;
@@ -396,4 +403,165 @@ footer .rights {
   display: flex;
   justify-content: center;
   margin: 16px auto;
+}
+
+@media screen and (max-width: 840px) {
+  .main {
+    padding-left: 40px;
+    background-size: contain;
+  }
+  .main .title {
+    padding-top: 200px;
+  }
+  .main nav {
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main nav a {
+    padding: 10px 0;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  .main #about .pic {
+    width: 40%;
+  }
+  .main #about .pic img {
+    width: 100%;
+    height: auto;
+  }
+  .main #skills {
+    margin-left: -40px;
+    flex-direction: column;
+    background-image: none;
+  }
+  .main #skills .skills__text {
+    width: 100%;
+  }
+  .main #skills .skill__pic {
+    display: none;
+  }
+  .main #skills .skill__items {
+    justify-content: space-between;
+  }
+  .main #works .CSSgal .slider__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main #works .CSSgal .slider__item__pic {
+    order: 1;
+  }
+  .main #works .CSSgal .slider__item__pic img {
+    width: 100%;
+    height: auto;
+  }
+  .main #works .CSSgal .slider__item__content {
+    gap: 16px;
+  }
+  .main #works .CSSgal .slider__item__content p {
+    width: 78%;
+  }
+  .main #works .CSSgal .slider__item__content .bullets {
+    position: relative;
+  }
+  #contact .content .hi, #contact .content .form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .main {
+    padding: 5%;
+    background-size: 180%;
+  }
+  .main .title {
+    padding-top: 200px;
+  }
+  .main nav {
+    display: none;
+  }
+  .main #about {
+    flex-direction: column;
+  }
+  .main #about .pic {
+    width: 100%;
+  }
+  .main #about .about__text {
+    width: 100%;
+  }
+  .main #about .about__text a {
+    width: 100%;
+    text-align: center;
+    padding: 20px 12px;
+  }
+  .main #skills {
+    padding: 5%;
+    margin: 0px;
+    width: 100%;
+    flex-direction: column;
+    background-image: none;
+  }
+  .main #skills .skill__items {
+    gap: 20px;
+  }
+  .main #skills .skills__text {
+    width: 100%;
+  }
+  .main #skills .skill__pic {
+    display: none;
+  }
+  .main #skills .skill__items {
+    justify-content: center;
+  }
+  .main #works {
+    background: none;
+  }
+  .main #works .CSSgal .slider__item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    padding: 0;
+  }
+  .main #works .CSSgal .slider__item__pic {
+    order: 1;
+  }
+  .main #works .CSSgal .slider__item__pic img {
+    width: 100%;
+    height: auto;
+  }
+  .main #works .CSSgal .slider__item__content {
+    width: 100%;
+    gap: 16px;
+  }
+  .main #works .CSSgal .slider__item__content h3 {
+    justify-content: center;
+  }
+  .main #works .CSSgal .slider__item__content p {
+    width: 100%;
+  }
+  .main #works .CSSgal .slider__item__content .tech {
+    flex-wrap: wrap;
+  }
+  .main #works .CSSgal .slider__item__content .bullets {
+    position: relative;
+  }
+  .main #works .CSSgal .slider__item__content .bullets a {
+    padding-right: 15%;
+  }
+  #contact {
+    padding: 5%;
+  }
+  #contact .content {
+    padding: 5%;
+  }
+  #contact .content .hi, #contact .content .form {
+    width: 100%;
+  }
+  footer {
+    padding: 5%;
+  }
+  footer .rights {
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
